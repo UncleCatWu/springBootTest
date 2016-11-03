@@ -1,0 +1,7 @@
+server:
+  port: 8081 # 服务端口号
+  tomcat:
+    uri-encoding: UTF-8 #以Tomcat为web容器时的字符编码
+
+test:
+  msg: Hello World SpringBoot!
