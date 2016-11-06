@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  */
 @ConfigurationProperties(locations = "classpath:config/customConfig.yml", prefix = "my")
 @Component
-public class CustomConfig {
+public class CustomConfigInfo {
 
     private String name;
 

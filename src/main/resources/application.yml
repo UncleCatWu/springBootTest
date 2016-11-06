@@ -1,5 +1,8 @@
 server:
   port: 8080
 
-test:
-  msg: i hava a pen;
+---
+spring:
+  profiles:
+    active: dev
+

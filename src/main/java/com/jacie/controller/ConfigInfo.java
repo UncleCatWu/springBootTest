@@ -1,19 +1,17 @@
 package com.jacie.controller;
 
-import com.jacie.domain.CustomConfig;
+import com.jacie.domain.CustomConfigInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 /**
  * Created by jacie on 11/3/16.
  */
 @RestController
-public class TestController {
+public class ConfigInfo {
 
     @Value("${test.msg}")
     private String msg;
@@ -22,7 +20,7 @@ public class TestController {
     private Environment environment;
 
     @Autowired
-    private CustomConfig customConfig;
+    private CustomConfigInfo customConfig;
 
     @RequestMapping(value = "index")
     public String index() {
